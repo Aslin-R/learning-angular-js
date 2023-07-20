@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'React vs Angular';
+  title = 'Which would be easier React or Angular, lets find it using learning ';
 }
