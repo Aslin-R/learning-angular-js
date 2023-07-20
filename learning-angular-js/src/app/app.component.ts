@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Which would be easier React or Angular, lets find it using learning ';
+  img='../assets/typescript.jpg';
+  choice=false;
 }
