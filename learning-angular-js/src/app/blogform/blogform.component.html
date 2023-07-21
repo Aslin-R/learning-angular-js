@@ -1,16 +1,16 @@
 
 <body>
   <div class="login-container">
-    <h2>Login</h2>
+    <h2>Add Blog</h2>
     
     <form  #blogform="ngForm" (submit)=insert(blogform.value)>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required ngModel>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required ngModel>
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required ngModel>
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" required ngModel>
 
-      <input type="submit" value="Login">
+      <input type="submit" value="Submit">
     </form>
   </div>
   <h6>Form value : {{blogform.value | json}}</h6>
