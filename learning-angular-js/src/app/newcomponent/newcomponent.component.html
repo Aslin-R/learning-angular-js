@@ -1,12 +1,19 @@
-<div *ngFor="let blog of blogs">
-<h4>{{blog.title}}</h4>
-<h4>{{blog.description}}</h4>
+<div  *ngFor="let blog of blogs" class="container">
+<div id='blog-tech'>
+    <h2>{{blog.title}}</h2>
+    <h4>{{blog.description}}</h4>
+    <br>
 </div>
-<div *ngIf="fruits.length>0" >
-    <h3 *ngFor="let fruit of fruits">
-        {{fruit.name}}
-    </h3>
 </div>
-<div *ngIf="fruits.length<2">
-    <h3>Order the fruits</h3>
+
+<h3>Top programming languages</h3>
+<div id='lang' *ngIf="languages.length>0" >
+    <ul>
+        <li *ngFor="let lan of languages">
+            {{lan.name}}
+        </li>
+    </ul>
+</div>
+<div *ngIf="languages.length<2">
+    <h3>No languages</h3>
 </div>
