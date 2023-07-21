@@ -16,5 +16,8 @@ export class NewcomponentComponent {
   ngOnInit() {
     this.blogs=blogs;
   }
- 
+  fruits:any[] = [
+    {name: 'Apple', color: 'red'},
+    {name: 'Banana', color: 'yellow'},
+  ];
 }
