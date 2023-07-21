@@ -5,12 +5,3 @@
 #blog-tech h2{
     color:red;
 }
-#lang{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#lang li,h3{
-    color:blue
-}

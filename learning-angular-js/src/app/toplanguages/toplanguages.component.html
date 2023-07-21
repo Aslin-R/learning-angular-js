@@ -1,0 +1,12 @@
+
+<h3>Top programming languages</h3>
+<div id='lang' *ngIf="languages.length>0" >
+    <ul>
+        <li *ngFor="let lan of languages">
+            {{lan.name}}
+        </li>
+    </ul>
+</div>
+<div *ngIf="languages.length<2">
+    <h3>No languages</h3>
+</div>

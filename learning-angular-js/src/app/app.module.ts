@@ -6,11 +6,13 @@ import { Routes,RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NewcomponentComponent } from './newcomponent/newcomponent.component';
 import { BlogformComponent } from './blogform/blogform.component';
+import { ToplanguagesComponent } from './toplanguages/toplanguages.component';
 
 const routes:Routes=[
   {path:'blogs',component:NewcomponentComponent},
   {path:'addBlog',component:BlogformComponent},
-  {path:'languages',component:NewcomponentComponent}
+  {path:'languages',component:ToplanguagesComponent},
+  
   
 ]
 
@@ -18,7 +20,8 @@ const routes:Routes=[
   declarations: [
     AppComponent,
     NewcomponentComponent,
-    BlogformComponent
+    BlogformComponent,
+    ToplanguagesComponent
   ],
   imports: [
     BrowserModule,

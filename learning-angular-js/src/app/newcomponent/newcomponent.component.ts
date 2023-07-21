@@ -16,12 +16,4 @@ export class NewcomponentComponent {
   ngOnInit() {
     this.blogs=blogs;
   }
-  languages:any[] = [
-  {name:'python', value:'python'},
-  {name:'java', value:'java'},
-  {name:'c', value:'c'},
-  {name:'c++', value:'c++'},
-  {name:'javascript', value:'javascript'},
-  {name:'php', value:'php'},
-  ];
 }
