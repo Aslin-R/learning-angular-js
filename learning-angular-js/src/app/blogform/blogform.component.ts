@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BlogserviceService } from '../service/blogservice.service';
 
 @Component({
   selector: 'blogform',
@@ -6,7 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./blogform.component.css']
 })
 export class BlogformComponent {
+
+  constructor(private service:BlogserviceService) { 
+
+  }
   insert(blog: any){
-    alert(blog.username)
+    //alert(blog.username)
+    console.log('...inserting...');
+    this.service.addBlog(blog);
   }
 }
