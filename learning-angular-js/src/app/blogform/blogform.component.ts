@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./blogform.component.css']
 })
 export class BlogformComponent {
-
+  insert(blog: any){
+    alert(blog.username)
+  }
 }
