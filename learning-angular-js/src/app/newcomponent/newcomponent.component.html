@@ -1,11 +1,12 @@
-<p>Hey its working</p>
-
 <div *ngFor="let blog of blogs">
-<h2>{{blog.title}}</h2>
-<h2>{{blog.description}}</h2>
+<h4>{{blog.title}}</h4>
+<h4>{{blog.description}}</h4>
 </div>
-<div *ngFor="let fruit of fruits">
-    <h1>
+<div *ngIf="fruits.length>0" >
+    <h3 *ngFor="let fruit of fruits">
         {{fruit.name}}
-    </h1>
+    </h3>
+</div>
+<div *ngIf="fruits.length<2">
+    <h3>Order the fruits</h3>
 </div>
